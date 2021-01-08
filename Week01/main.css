@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+    justify-items: center;
+    margin: 0 auto;
+    width: 400px;
+}
+
+h1,
+h2 {
+    font-family: 'Lora', sans-serif;
+}
+
+img {
+    align-self: center;
+}
+
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: 7%;
+    background-color: #6495ED;
+    margin: 0 auto;
+    width: 400px;
+    height: 250px;
+    color:#FAEBD7;
+    text-align: right;
+}
+
+header h1 a {
+    color: #FAEBD7;
+    text-decoration-line: none;
+}
+
+header hr {
+    color: #FAEBD7;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #6495ED;
+}
+
+nav ul {
+    list-style-type: none;
+    line-height: 2em;
+}
+
+nav ul li a {
+    color: #FAEBD7;
+    text-decoration-line: none;
+}
+
+nav ul li a:hover {
+    text-decoration-line: underline;
+    color: white;
+}
+
+nav ul li.active a {
+    background-color: #000;
+    color: #DEB887;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+    width: 400px;
+    background-color:#FAEBD7 ;
+}
+
+.post-date{
+    color: grey;
+    text-align-last: left;
+    padding: 3%;
+    
+}
+
+article{
+    
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    
+    
+}
+
+section.post-content{
+    font-size: 1em;
+    margin: 0px auto;
+    align-items: left;
+    color: black;
+}
+
+section.post-content h2, p{
+    padding: 10px;
+}
+
+section.post-content h2{
+    margin-top: 0px;
+}
+
+section.post-content figure{
+    margin: 0 auto;
+    padding: 8% 16% 2% 20%;
+}
+
+section.post-content figure img{
+    width: 80%
+}
+
+.post-content a{
+    color: black;
+    text-decoration: none;
+}
+
+/*----------------Article Title Links--------------*/
+
+section.post-content h2 a{
+    color: black;
+    text-decoration: none;
+}
+
+section.post-content h2 a:hover{
+    color: #6495ED;
+    text-decoration: underline;
+}
+
+section.post-content h2 a:active{
+    color: #DEB887;
+    text-decoration: none;
+}
+
+/*------------Article links--------------*/
+
+.post-content p a{
+    color: #6495ED;
+}
+
+.post-content p a:hover{
+    color: #6495ED;
+    text-decoration-line: underline;
+}
+
+.post-content p a:active{
+    color: #DEB887;
+}
+
+@media only screen and (min-width: 64rem) {}
