@@ -1,0 +1,13 @@
+p:nth-of-type(n +2) {
+
+   /*color: white;*/
+   visibility: hidden;
+}
+
+label + span.help:before {
+    content: '(' 
+}
+
+label + span.help:after {
+    content: ')' 
+}
