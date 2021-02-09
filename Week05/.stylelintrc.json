@@ -1,0 +1,6 @@
+{
+    "extends": "D:/BYUI/WDD331-Advanced_CSS/Week05/stylelint-config-recommended",
+    "rules" : {
+        "value-no-vendor-prefix" : true
+    }
+}

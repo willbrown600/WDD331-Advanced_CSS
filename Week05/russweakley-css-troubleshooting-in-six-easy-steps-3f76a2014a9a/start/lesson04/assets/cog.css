@@ -176,25 +176,25 @@ nav
 current class
 ----------------------------------- */
 
-.current a
+#nav .current a
 {
 	color: #000;
 	background-color: #E79538;
 }
 
-.current a:focus
+#nav .current a:focus
 {
 	color: #fff;
 	background-color: #000;
 }
 
-.current a:hover
+#nav .current a:hover
 {
 	color: #000;
 	background-color: #E79538;
 }
 
-.current a:active
+#nav .current a:active
 {
 	color: #fff;
 	background-color: #B40000;
