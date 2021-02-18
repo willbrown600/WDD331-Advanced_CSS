@@ -2,7 +2,6 @@
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -18,11 +17,13 @@ body {
 
 h1,
 h2 {
-  font-family: "Lora", sans-serif;
+  font-family: 'Lora', sans-serif;
 }
 
 img {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /*----------- HEADER --------------*/
@@ -35,10 +36,13 @@ header {
   color: #FAEBD7;
   text-align: right;
 }
+
 header h1 a {
   color: #FAEBD7;
-  text-decoration-line: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
+
 header hr {
   color: #FAEBD7;
 }
@@ -52,14 +56,19 @@ nav ul {
   list-style-type: none;
   line-height: 2em;
 }
+
 nav ul li a {
   color: #FAEBD7;
-  text-decoration-line: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
+
 nav ul li a:hover {
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: white;
 }
+
 nav ul li.active a {
   background-color: #000;
   color: #DEB887;
@@ -95,35 +104,45 @@ article {
   margin-top: -15px;
   color: black;
 }
+
 .post-content h2, .post-content p {
   padding: 10px;
   margin-top: 0px;
 }
+
 .post-content h2 a:active {
   color: #DEB887;
   text-decoration: none;
 }
+
 .post-content p a {
   color: #6495ED;
 }
+
 .post-content p a:hover {
   color: #6495ED;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
+
 .post-content p a:active {
   color: #DEB887;
 }
+
 .post-content figure {
   margin: 0 auto;
   padding: 8% 16% 2% 20%;
 }
+
 .post-content figure img {
   width: 80%;
 }
+
 .post-content a {
   color: black;
   text-decoration: none;
 }
+
 .post-content a:hover {
   color: #6495ED;
   text-decoration: underline;
@@ -138,23 +157,22 @@ article {
     margin: 0 auto;
     width: 60%;
   }
-
   div {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
-
   header {
     height: 100%;
     margin-left: 0%;
+    -ms-grid-column: 1;
     grid-column: 1;
   }
-
   main {
     grid-column: span2;
     width: 100%;
   }
-
   article {
     background-color: white;
     width: 80%;
@@ -162,16 +180,13 @@ article {
     border-right: 4px solid lightgray;
     border-bottom: 4px solid lightgray;
   }
-
   section.post-content {
     padding: 5%;
     margin-top: -30px;
   }
-
   div.post-date {
     padding-left: 7%;
     padding-top: 10%;
   }
 }
-
 /*# sourceMappingURL=styles.css.map */

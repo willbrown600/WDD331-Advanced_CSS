@@ -173,11 +173,9 @@ select {
 
 /* END RESET CSS */
 /* variables*/
-.transition, #listing li a, #player nav li a, .new span.overlay, nav ul li a {
-  -moz-transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+.transition, nav ul li a, .new span.overlay, #player nav li a, #listing li a {
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 body,
@@ -198,7 +196,6 @@ body {
   margin: 0 auto;
   background-color: #fff;
   padding: 0 70px;
-  -moz-box-shadow: -3px 0px 5px #20211D;
   -webkit-box-shadow: -3px 0px 5px #20211D;
   box-shadow: -3px 0px 5px #000;
   behavior: url(PIE.htc);
@@ -211,52 +208,58 @@ header {
   position: relative;
   margin-bottom: 25px;
 }
+
 header form {
   float: right;
   margin-top: 45px;
 }
+
 header h1 {
   text-indent: -9999px;
   height: 44px;
 }
+
 header input {
   position: relative;
   height: 16px;
   width: 150px;
   border: 2px solid #4E4F48;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  -o-border-radius: 7px;
   border-radius: 7px;
   behavior: url(PIE.htc);
 }
-header input[type=text] {
+
+header input[type="text"] {
   padding: 5px;
   background: url(../images/search.png) no-repeat 5px 5px;
   padding-left: 30px;
   font: bold italic 1.2em Georgia, "Times New Roman", Times, serif;
   color: #ddd;
 }
-header input[type=submit] {
+
+header input[type="submit"] {
   height: 30px;
   width: 40px;
   font-weight: bold;
 }
+
 header .account {
   position: absolute;
   top: 20px;
   right: 145px;
 }
+
 header .account a {
   display: block;
-  font-size: 0.9em;
+  font-size: .9em;
   color: #4E4F48;
   padding-top: 0px;
 }
+
 header .account a:hover {
   text-decoration: underline;
 }
-header .account a[href^=cart] {
+
+header .account a[href^="cart"] {
   position: absolute;
   right: -100px;
   top: 0;
@@ -264,9 +267,11 @@ header .account a[href^=cart] {
   width: 86px;
   line-height: 30px;
 }
-header .account a[href^=cart] img {
+
+header .account a[href^="cart"] img {
   margin-right: 8px;
 }
+
 header p {
   font-weight: bold;
   margin-top: 12px;
@@ -288,10 +293,12 @@ nav {
   line-height: 30px;
   font-weight: bold;
 }
+
 nav ul li,
 nav footer ul li {
   float: left;
 }
+
 nav ul li a {
   position: relative;
   width: 112px;
@@ -300,15 +307,14 @@ nav ul li a {
   margin-right: 5px;
   text-align: center;
   color: white;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  -o-border-radius: 7px;
   border-radius: 7px;
   behavior: url(PIE.htc);
 }
+
 nav ul li a:hover {
   background-color: #C2CF52;
 }
+
 nav ul.account {
   float: none;
   margin-top: 0;
@@ -317,7 +323,7 @@ nav ul.account {
 
 footer {
   clear: both;
-  font-size: 0.9em;
+  font-size: .9em;
   margin-top: 2em;
   margin-left: -1em;
   height: 30px;
@@ -328,7 +334,7 @@ footer li {
 }
 
 footer li a {
-  padding: 0 0.8em;
+  padding: 0 .8em;
   border-right: 1px solid #4E4F48;
   color: #4E4F48;
 }
@@ -370,6 +376,7 @@ img {
 .new {
   float: left;
 }
+
 .new span.overlay {
   display: block;
   opacity: 0;
@@ -384,6 +391,7 @@ img {
   padding: 10px;
   color: white;
 }
+
 .new a:hover span.overlay {
   opacity: 1;
   bottom: 0;
@@ -428,22 +436,22 @@ span.overlay img {
   z-index: 200;
   padding: 10px 0px 10px 10px;
   line-height: 50px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
   border-radius: 10px;
   behavior: url(PIE.htc);
 }
+
 #type li {
   float: left;
   width: 190px;
 }
+
 #type li a {
   color: white;
   width: 180px;
   margin: 8px;
   text-align: left;
 }
+
 #type img {
   padding-right: 8px;
 }
@@ -466,12 +474,10 @@ span.overlay img {
   border-top: none;
   min-height: 400px;
   float: left;
-  -moz-border-radius: 0 0 15px 15px;
-  -webkit-border-radius: 0 0 15px 15px;
-  -o-border-radius: 0 0 15px 15px;
   border-radius: 0 0 15px 15px;
   behavior: url(PIE.htc);
 }
+
 #player nav {
   clear: both;
   height: 48px;
@@ -479,9 +485,11 @@ span.overlay img {
   font-size: 1.2em;
   list-style: none;
 }
+
 #player nav li {
   float: left;
 }
+
 #player nav li a {
   position: relative;
   display: block;
@@ -496,11 +504,13 @@ span.overlay img {
   margin-right: 1px;
   behavior: url(PIE.htc);
 }
+
 #player nav li a:hover {
   background-color: #C2CF52;
   border: 5px solid #C2CF52;
   border-bottom: none;
 }
+
 #player nav li a.active {
   background: #ffffff url(../images/player.png) no-repeat;
   color: #4E4F48;
@@ -509,27 +519,35 @@ span.overlay img {
   border-bottom: none;
   cursor: default;
 }
+
 #player nav li a[href^="#reviews"] {
   margin-right: 0;
 }
+
 #player nav li.detail a {
   background-position: 0 -43px;
 }
+
 #player nav li.video a {
   background-position: 0 -129px;
 }
+
 #player nav li.review a {
   background-position: 0 -215px;
 }
+
 #player nav li.detail a.active {
   background-position: 0 0px;
 }
+
 #player nav li.video a.active {
   background-position: 0 -86px;
 }
+
 #player nav li.review a.active {
   background-position: 0 -172px;
 }
+
 #player nav img {
   vertical-align: middle;
   margin: 0 10px;
@@ -547,7 +565,7 @@ span.overlay img {
 }
 
 #col1 p {
-  font-size: 0.9em;
+  font-size: .9em;
   line-height: 1.3em;
 }
 
@@ -618,7 +636,7 @@ span.overlay img {
 
 p.reviewer {
   clear: both;
-  font-size: 0.95em;
+  font-size: .95em;
   margin: 15px 4px;
 }
 
@@ -630,15 +648,14 @@ p.reviewer {
   background-color: #4E4F48;
   color: white;
   float: right;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
   border-radius: 15px;
   behavior: url(PIE.htc);
 }
+
 #sidebar img {
   margin-left: 15px;
 }
+
 #sidebar h3 {
   margin: 5px 12px 10px;
   font-size: 1.2em;
@@ -646,18 +663,18 @@ p.reviewer {
 
 #listing ul {
   line-height: 50px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
   border-radius: 10px;
   behavior: url(PIE.htc);
 }
+
 #listing img {
   padding-right: 8px;
 }
+
 #listing li {
   list-style: none;
 }
+
 #listing li a {
   width: 200px;
   margin: 10px;
@@ -668,10 +685,8 @@ p.reviewer {
   font-size: 1.3em;
   margin-left: 1em;
 }
+
 #listing li a:hover {
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -o-border-radius: 8px;
   border-radius: 8px;
   behavior: url(PIE.htc);
   background-color: #C2CF52;
@@ -681,5 +696,4 @@ p.reviewer {
 Background: $base
 Highlight:  $accent
 */
-
 /*# sourceMappingURL=style.css.map */
