@@ -1,0 +1,115 @@
+//variables to setup basic size and shape of the card and pips
+$card-width: 40vw;
+$card-height: $card-width*1.4;
+$font-size-number: $card-width * 0.1;
+$icon-size: $card-width / 5;
+
+/*,
+*:before,
+/*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}*/
+
+//styles to draw a basic outline of a card
+.card {
+    border: 1px solid grey;
+    height: $card-height;
+    width: $card-width;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 2px 2px 4px grey;
+}
+
+//because it is a card front we want a bit of extra padding
+.card-front {
+    padding: .5em;
+}
+
+.card.card-front{
+    display:grid;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 100px 100px 100px 1fr;
+    grid-template-rows: 50px 1fr 1fr;
+    grid-gap: 15px;
+}
+.cell1{
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    
+
+}
+.cell2{
+    grid-column: 3;
+    grid-row: 2;
+    align-self: center;
+    
+
+}
+
+.cell3{
+    grid-column: 4;
+    grid-row: 2;
+    align-self: center;
+    
+
+}
+.cell4{
+    grid-column: 3;
+    grid-row: 3;
+    align-self: center;
+    
+}
+.cell5{
+    grid-column: 2;
+    grid-row: 4;
+    align-self: center;
+    
+
+}
+.cell6{
+    grid-column: 3;
+    grid-row: 4;
+    align-self: center;
+    
+}
+.cell7{
+    grid-column: 4;
+    grid-row: 4;
+    align-self: center;
+    
+
+}
+
+.rotate.number.cell{
+    grid-column: 5;
+    grid-row: 6;
+    
+}
+
+
+//set icon size
+.icon {
+    width: $icon-size;
+    height: $icon-size;
+}
+
+.number {
+    text-align: center;
+    font-size: $font-size-number;
+  //an icon that is part of a number should be half the normal size
+    & > .icon {
+        width: $icon-size * .5;
+        height: $icon-size *.5;
+    }
+}
+
+//rotate bottom pips 180deg
+.rotate {
+    transform: rotate(180deg);
+}
