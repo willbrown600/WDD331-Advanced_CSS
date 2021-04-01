@@ -1,0 +1,292 @@
+@import 'typography';
+@import 'icons';
+
+$sm-break: 48em;
+// colors
+$dark-gray: #727272;
+$med-gray: #b4b3b5;
+$light-gray: #eaeaea;
+$body-font: #020202;
+$link-blue: #0076b6; //why do we have both of these blues?
+$byui-blue: #056cb6;
+
+// Utility classes
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/*********My code**********/
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  background-color: $byui-blue;
+}
+
+.page-wrapper {
+  margin: 0 auto;
+}
+
+form div {
+  display: none;
+}
+
+.site-banner {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  line-height: 20px;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+nav {
+  display: none;
+}
+
+
+.site-banner__left {
+  font-size: 2rem;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  width: 80px;
+}
+
+.site-banner__right {
+
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 125px;
+  height: 60px;
+
+  a {
+    text-decoration-line: none;
+    font-size: 1.7em;
+    padding: .5em;
+    color: white;
+  }
+
+}
+
+.icon-byui-logo:before {
+  color: white;
+  background-color: black;
+  font-size: 5vh;
+  text-decoration-line: none;
+}
+
+.icon-search,
+.icon-audience,
+.icon-menu {
+  color: #fff;
+  text-decoration: none;
+  justify-content: space-between;
+  line-height: 60px;
+}
+
+.site-name {
+  font-size: 1.25rem;
+  font-family: 'BYUI Open Sans', 'sans-serif';
+  font-style: normal;
+  font-weight: 100;
+  border-bottom: 1px solid #000;
+  background-color: $light-gray;
+  margin: 0;
+  padding: 1rem;
+  text-align: right;
+}
+
+.images {
+  margin: auto;
+  margin-top: 35px;
+  width: 96%;
+}
+
+.home-ad-caption {
+  padding: 10px;
+}
+
+figure {
+  margin: auto;
+  margin-top: 35px;
+  width: 96%;
+  border: 1px solid $med-gray;
+  color: $byui-blue;
+  font-family: 'BYUI Open Sans', 'sans-serif';
+  font-size: .95rem;
+}
+
+
+
+
+/******Articles***********/
+
+
+.articles-group {
+  margin-top: 35px;
+  width: 96%;
+}
+
+.article {
+  margin: auto;
+  border-top: 1px solid $dark-gray;
+  padding: 25px 0;
+  width: 96%;
+}
+
+.article-date {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.article-title {
+  color: $byui-blue;
+  font-family: 'BYUI Open Sans', 'sans-serif';
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+.article-abstract {
+  font-size: 1.2rem;
+}
+
+.newsroom-button {
+  float: right;
+  margin-right: 7px;
+  margin-bottom: 35px;
+  background-color: $byui-blue;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  padding: 6px 24px;
+  font-size: .95rem;
+  border-radius: 4px;
+}
+
+/**************media queries***********/
+
+@media only screen and (min-width: 32em) {
+
+  .page-wrapper {
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    column-gap: 25px;
+  }
+
+  .images {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .video-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  figure {
+    width: 30%;
+  }
+
+
+  .articles-group {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+
+
+  main {
+    margin: 0 auto;
+    padding: 2%;
+    border: 1px solid red;
+  }
+
+  section {
+    margin: 15% 0 auto;
+    margin-left: 7%;
+    border: 1px solid red;
+    height: 200px;
+    width: 85%;
+  }
+
+  header{
+    display:flex;
+  }
+
+  .site-banner__right{
+    display: none;
+  }
+
+  nav {
+    display: flex;
+
+
+    ul {
+      display: flex;
+      background-color: #006EB6;
+      width: 100%;
+      margin: 0 auto;
+
+      li {
+        border: 1px solid red;
+        list-style: none;
+        height: 10;
+
+        a {
+          display: flex;
+          text-decoration-line: none;
+          font-size: 1.2em;
+          padding: 15px;
+
+          &:hover {
+            background-color: white;
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
